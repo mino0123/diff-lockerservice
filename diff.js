@@ -30,6 +30,16 @@ jsdom.env('<div></div>', (errors, window) => {
       const diff = diffElement(name, window);
       writeJSONFileSync(`./diff/${name}.json`, diff);
     });
+    // output diff/index.js
+    const documentProp = `document: require('./document.json'),`;
+    const tagProps = tags.filter((t) => (ignored.indexOf(t) < 0)).reduce((code, tag) => {
+      return code + `${tag}: require('./${tag}.json'),\n`;
+    }, '');
+    const indexJs = `module.exports = {
+      ${documentProp}
+      ${tagProps}
+    }`;
+    fs.writeFileSync('./diff/index.js', indexJs);
 });
 
 function diffElement(name, window) {
