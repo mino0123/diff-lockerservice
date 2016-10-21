@@ -21,6 +21,11 @@ const BASE_URL = 'https://raw.githubusercontent.com/forcedotcom/aura/master/aura
 
 fetchAuraJS('aura.Aura')
 .then((code) => {
+  // Insert export code
+  code = code.replace(`function SecureComponentRef`, `
+    window.SecureDocument = SecureDocument;
+    window.SecureElement = SecureElement;
+    function SecureComponentRef`);
   code = `
     var document = window.document;
     var navigator = window.navigator;
@@ -29,8 +34,6 @@ fetchAuraJS('aura.Aura')
     var Event = window.Event;
     function AuraDevToolService() {}
     ${code}
-    window.SecureDocument = SecureDocument;
-    window.SecureElement = SecureElement;
   `;
   mkdirp.sync('./lib');
   fs.writeFileSync('./lib/aura.js', code, 'utf8');
