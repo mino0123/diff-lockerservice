@@ -1,6 +1,7 @@
 {
   "passed": [
     "location",
+    "constructor",
     "onabort",
     "onautocomplete",
     "onautocompleteerror",
@@ -168,7 +169,6 @@
     "dispatchEvent"
   ],
   "removed": [
-    "constructor",
     "ondragexit",
     "onsort",
     "currentScript",
