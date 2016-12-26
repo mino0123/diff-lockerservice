@@ -30,6 +30,11 @@ jsdom.env('<div></div>', (errors, window) => {
       const diff = diffElement(name, window);
       writeJSONFileSync(`./diff/${name}.json`, diff);
     });
+    // diff comment
+    const commentOrig = window.document.createComment('comment text');
+    const comment = window.SecureElement(commentOrig, 'key');
+    const commentDiff = diffProps(commentOrig, comment);
+    writeJSONFileSync('./diff/comment.json', docDiff);
     // output diff/index.js
     const documentProp = `document: require('./document.json'),`;
     const tagProps = tags.filter((t) => (ignored.indexOf(t) < 0)).reduce((code, tag) => {
