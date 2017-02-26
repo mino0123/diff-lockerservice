@@ -5,6 +5,9 @@
     "getAttribute",
     "setAttribute",
     "removeAttribute",
+    "getAttributeNode",
+    "setAttributeNode",
+    "removeAttributeNode",
     "addEventListener"
   ],
   "removed": [
@@ -106,11 +109,8 @@
     "removeAttributeNS",
     "hasAttribute",
     "hasAttributeNS",
-    "getAttributeNode",
     "getAttributeNodeNS",
-    "setAttributeNode",
     "setAttributeNodeNS",
-    "removeAttributeNode",
     "matches",
     "webkitMatchesSelector",
     "getElementsByTagName",

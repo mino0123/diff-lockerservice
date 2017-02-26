@@ -1,5 +1,6 @@
 {
   "passed": [
+    "constructor",
     "toString",
     "disabled",
     "form",
@@ -21,6 +22,7 @@
     "ondrag",
     "ondragend",
     "ondragenter",
+    "ondragexit",
     "ondragleave",
     "ondragover",
     "ondragstart",
@@ -59,6 +61,7 @@
     "onseeking",
     "onselect",
     "onshow",
+    "onsort",
     "onstalled",
     "onsubmit",
     "onsuspend",
@@ -81,7 +84,11 @@
     "querySelector",
     "querySelectorAll",
     "children",
+    "firstElementChild",
+    "lastElementChild",
+    "childElementCount",
     "hasAttributes",
+    "getAttributeNames",
     "getAttribute",
     "getAttributeNS",
     "setAttribute",
@@ -96,6 +103,7 @@
     "setAttributeNodeNS",
     "removeAttributeNode",
     "matches",
+    "webkitMatchesSelector",
     "getElementsByTagName",
     "getElementsByTagNameNS",
     "getElementsByClassName",
@@ -112,6 +120,7 @@
     "attributes",
     "innerHTML",
     "outerHTML",
+    "hasChildNodes",
     "normalize",
     "cloneNode",
     "isEqualNode",
@@ -156,15 +165,5 @@
     "removeEventListener",
     "dispatchEvent"
   ],
-  "removed": [
-    "constructor",
-    "ondragexit",
-    "onsort",
-    "firstElementChild",
-    "lastElementChild",
-    "childElementCount",
-    "getAttributeNames",
-    "webkitMatchesSelector",
-    "hasChildNodes"
-  ]
+  "removed": []
 }

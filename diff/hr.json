@@ -1,6 +1,12 @@
 {
   "passed": [
+    "constructor",
     "toString",
+    "align",
+    "color",
+    "noShade",
+    "size",
+    "width",
     "style",
     "onabort",
     "onautocomplete",
@@ -18,6 +24,7 @@
     "ondrag",
     "ondragend",
     "ondragenter",
+    "ondragexit",
     "ondragleave",
     "ondragover",
     "ondragstart",
@@ -56,6 +63,7 @@
     "onseeking",
     "onselect",
     "onshow",
+    "onsort",
     "onstalled",
     "onsubmit",
     "onsuspend",
@@ -78,7 +86,11 @@
     "querySelector",
     "querySelectorAll",
     "children",
+    "firstElementChild",
+    "lastElementChild",
+    "childElementCount",
     "hasAttributes",
+    "getAttributeNames",
     "getAttribute",
     "getAttributeNS",
     "setAttribute",
@@ -93,6 +105,7 @@
     "setAttributeNodeNS",
     "removeAttributeNode",
     "matches",
+    "webkitMatchesSelector",
     "getElementsByTagName",
     "getElementsByTagNameNS",
     "getElementsByClassName",
@@ -109,6 +122,7 @@
     "attributes",
     "innerHTML",
     "outerHTML",
+    "hasChildNodes",
     "normalize",
     "cloneNode",
     "isEqualNode",
@@ -153,20 +167,5 @@
     "removeEventListener",
     "dispatchEvent"
   ],
-  "removed": [
-    "constructor",
-    "align",
-    "color",
-    "noShade",
-    "size",
-    "width",
-    "ondragexit",
-    "onsort",
-    "firstElementChild",
-    "lastElementChild",
-    "childElementCount",
-    "getAttributeNames",
-    "webkitMatchesSelector",
-    "hasChildNodes"
-  ]
+  "removed": []
 }

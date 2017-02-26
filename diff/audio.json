@@ -1,5 +1,6 @@
 {
   "passed": [
+    "constructor",
     "toString",
     "load",
     "canPlayType",
@@ -37,6 +38,8 @@
     "volume",
     "muted",
     "defaultMuted",
+    "audioTracks",
+    "videoTracks",
     "textTracks",
     "style",
     "onabort",
@@ -55,6 +58,7 @@
     "ondrag",
     "ondragend",
     "ondragenter",
+    "ondragexit",
     "ondragleave",
     "ondragover",
     "ondragstart",
@@ -93,6 +97,7 @@
     "onseeking",
     "onselect",
     "onshow",
+    "onsort",
     "onstalled",
     "onsubmit",
     "onsuspend",
@@ -115,7 +120,11 @@
     "querySelector",
     "querySelectorAll",
     "children",
+    "firstElementChild",
+    "lastElementChild",
+    "childElementCount",
     "hasAttributes",
+    "getAttributeNames",
     "getAttribute",
     "getAttributeNS",
     "setAttribute",
@@ -130,6 +139,7 @@
     "setAttributeNodeNS",
     "removeAttributeNode",
     "matches",
+    "webkitMatchesSelector",
     "getElementsByTagName",
     "getElementsByTagNameNS",
     "getElementsByClassName",
@@ -146,6 +156,7 @@
     "attributes",
     "innerHTML",
     "outerHTML",
+    "hasChildNodes",
     "normalize",
     "cloneNode",
     "isEqualNode",
@@ -190,17 +201,5 @@
     "removeEventListener",
     "dispatchEvent"
   ],
-  "removed": [
-    "constructor",
-    "audioTracks",
-    "videoTracks",
-    "ondragexit",
-    "onsort",
-    "firstElementChild",
-    "lastElementChild",
-    "childElementCount",
-    "getAttributeNames",
-    "webkitMatchesSelector",
-    "hasChildNodes"
-  ]
+  "removed": []
 }
